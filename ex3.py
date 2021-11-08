@@ -1,10 +1,12 @@
-password=input('Enter the correct password to continue: ')
+print('Enter correct password to continue: ')
+count=0
+while count < 3:
+    password = input('Enter password: ')
+    if password=='flo123':
+        print('Correct Password.')
+        break
+    else:
+        print('Incorrect password. Try again.')
+        count += 1
 
-count = 0
-while password!='flo123' and count<4:
-    print('Incorrect. Try again.')
-    count+=1
-if password == password:
-    print('Correct.')
-else:
-    print('You lost.')
+print("You lost.")
